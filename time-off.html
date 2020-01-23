@@ -1,0 +1,601 @@
+<!DOCTYPE html>
+<html lang="en">
+	
+<!-- Mirrored from dreamguys.co.in/demo/dleohr/dleohr/time-off.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2020 02:17:37 GMT -->
+<head>
+	
+		<!-- Required meta tags -->
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width, initial-scale=1">
+		
+		<title>Profile Page</title>
+		
+		<!-- Favicon -->
+		<link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+		
+		<!-- Bootstrap CSS -->
+		<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+		
+		<!-- Linearicon Font -->
+		<link rel="stylesheet" href="assets/css/lnr-icon.css">
+				
+		<!-- Fontawesome CSS -->
+        <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+		
+		<!-- Select2 CSS -->
+		<link rel="stylesheet" href="assets/plugins/select2/select2.min.css">
+				
+		<!-- Custom CSS -->
+		<link rel="stylesheet" href="assets/css/style.css">
+		
+		<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
+		<!--[if lt IE 9]>
+		<script src="assets/js/html5shiv.min.js"></script>
+		<script src="assets/js/respond.min.js"></script>
+		<![endif]-->
+		
+	</head>
+	<body>
+	
+		<!-- Inner wrapper -->
+		<div class="inner-wrapper">
+			
+			<!-- Loader -->
+			<div id="loader-wrapper">
+				
+				<div class="loader">
+				  <div class="dot"></div>
+				  <div class="dot"></div>
+				  <div class="dot"></div>
+				  <div class="dot"></div>
+				  <div class="dot"></div>
+				</div>
+			</div>
+			
+			<!-- Header -->
+			<header class="header">
+			
+				<!-- Top Header Section -->
+				<div class="top-header-section">
+					<div class="container-fluid">
+						<div class="row align-items-center">
+							<div class="col-lg-3 col-md-3 col-sm-3 col-6">
+								<div class="logo my-3 my-sm-0">
+									<a href="index.html">
+										<img src="assets/img/logo.png" alt="logo image" class="img-fluid" width="100">
+									</a>
+								</div>
+							</div>
+							<div class="col-lg-9 col-md-9 col-sm-9 col-6 text-right">
+								<div class="user-block d-none d-lg-block">
+									<div class="row align-items-center">
+										<div class="col-lg-12 col-md-12 col-sm-12">
+											<div class="user-notification-block align-right d-inline-block">
+												<div class="top-nav-search item-animated">
+													<form>
+														<input type="text" class="form-control" placeholder="Search here">
+														<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+													</form>
+												</div>
+											</div>
+											
+											<!-- User notification-->
+											<div class="user-notification-block align-right d-inline-block">
+												<ul class="list-inline m-0">
+													<li class="list-inline-item item-animated" data-toggle="tooltip" data-placement="top" title="" data-original-title="Apply Leave">
+														<a href="leave.html" class="font-23 menu-style text-white align-middle">
+															<span class="lnr lnr-briefcase position-relative"></span>
+														</a>
+													</li>
+												</ul>
+											</div>
+											<!-- /User notification-->
+											
+											<!-- User info-->
+											<div class="user-info align-right dropdown d-inline-block header-dropdown">
+												<a href="javascript:void(0)" data-toggle="dropdown" class="menu-style dropdown-toggle">
+													<div class="user-avatar d-inline-block">
+														<img src="assets/img/profiles/img-6.jpg" alt="user avatar" class="rounded-circle img-fluid" width="55">
+													</div>
+												</a>
+												
+												<!-- Notifications -->
+												<div class="dropdown-menu notification-dropdown-menu shadow-lg border-0 p-3 m-0 dropdown-menu-right">
+													<a class="dropdown-item p-2" href="employment.html">
+														<span class="media align-items-center">
+															<span class="lnr lnr-user mr-3"></span>
+															<span class="media-body text-truncate">
+																<span class="text-truncate">Profile</span>
+															</span>
+														</span>
+													</a>
+													<a class="dropdown-item p-2" href="profile-settings.html">
+														<span class="media align-items-center">
+															<span class="lnr lnr-cog mr-3"></span>
+															<span class="media-body text-truncate">
+																<span class="text-truncate">Settings</span>
+															</span>
+														</span>
+													</a>
+													<a class="dropdown-item p-2" href="login.html">
+														<span class="media align-items-center">
+															<span class="lnr lnr-power-switch mr-3"></span>
+															<span class="media-body text-truncate">
+																<span class="text-truncate">Logout</span>
+															</span>
+														</span>
+													</a>
+												</div>
+												<!-- Notifications -->
+												
+											</div>
+											<!-- /User info-->
+											
+										</div>
+									</div>
+								</div>
+								<div class="d-block d-lg-none">
+									<a href="javascript:void(0)">
+										<span class="lnr lnr-user d-block display-5 text-white" id="open_navSidebar"></span>
+									</a>
+									
+									<!-- Offcanvas menu -->
+											<div class="offcanvas-menu" id="offcanvas_menu">
+										<span class="lnr lnr-cross float-left display-6 position-absolute t-1 l-1 text-white" id="close_navSidebar"></span>
+										<div class="user-info align-center bg-theme text-center">
+											<a href="javascript:void(0)" class="d-block menu-style text-white">
+												<div class="user-avatar d-inline-block mr-3">
+													<img src="assets/img/profiles/img-6.jpg" alt="user avatar" class="rounded-circle" width="50">
+												</div>
+											</a>
+										</div>
+										<div class="user-notification-block align-center">
+											<div class="top-nav-search item-animated">
+												<form>
+													<input type="text" class="form-control" placeholder="Search here">
+													<button class="btn" type="submit"><i class="fa fa-search"></i></button>
+												</form>
+											</div>
+										</div>
+										<hr>
+										<div class="user-menu-items px-3 m-0">
+											<a class="px-0 pb-2 pt-0" href="index.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-home mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Dashboard</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="employees.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-users mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Employees</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="company.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-apartment mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Company</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="calendar.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-calendar-full mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Calendar</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="leave.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-briefcase mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Leave</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="reviews.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-star mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Reviews</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="reports.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-rocket mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Reports</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="manage.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-sync mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Manage</span>
+													</span>
+												</span>
+											</a>
+											
+											<a class="p-2" href="settings.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-cog mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Settings</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="employment.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-user mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Profile</span>
+													</span>
+												</span>
+											</a>
+											<a class="p-2" href="login.html">
+												<span class="media align-items-center">
+													<span class="lnr lnr-power-switch mr-3"></span>
+													<span class="media-body text-truncate text-left">
+														<span class="text-truncate text-left">Logout</span>
+													</span>
+												</span>
+											</a>
+										</div>
+									</div>
+									<!-- /Offcanvas menu -->
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Top Header Section -->
+				
+				<!-- Slide Nav -->
+				<div class="header-wrapper d-none d-sm-none d-md-none d-lg-block">
+					<div class="container-fluid">
+						<div class="row">
+							<div class="col-12">
+								<div class="header-menu-list d-flex bg-white rt_nav_header horizontal-layout nav-bottom">
+									<div class="append mr-auto my-0 my-md-0 mr-auto">
+										<ul class="list-group list-group-horizontal-md mr-auto">
+											<li class="mr-1"><a href="index.html" class="text-dark btn-ctm-space"><span class="lnr lnr-home pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Dashboard</span></a></li>
+											<li class="mr-1"><a class="text-dark btn-ctm-space" href="employees.html"><span class="lnr lnr-users pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Employees</span></a></li>
+											<li class="mr-1"><a class="text-dark btn-ctm-space" href="company.html"><span class="lnr lnr-apartment pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Company</span></a></li>
+											<li class="mr-1"><a class="text-dark btn-ctm-space" href="calendar.html"><span class="lnr lnr-calendar-full pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Calendar</span></a></li>
+											<li class="mr-1"><a class="text-dark btn-ctm-space" href="leave.html"><span class="lnr lnr-briefcase pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Leave</span></a></li>
+											<li class="mr-1"><a class="text-dark btn-ctm-space" href="reviews.html"><span class="lnr lnr-star pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Reviews</span></a></li>
+											<li class="mr-1"><a class="text-dark btn-ctm-space" href="reports.html"><span class="lnr lnr-rocket pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Reports</span></a></li>
+											<li class="mr-1"><a class="text-dark btn-ctm-space" href="manage.html"><span class="lnr lnr-sync pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Manage</span></a></li>
+											<li class="mr-1 active"><a class="text-white btn-ctm-space" href="settings.html"><span class="lnr lnr-cog pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Settings</span></a></li>
+										</ul>
+									</div>
+									
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<!-- /Slide Nav -->
+				
+			</header>
+			<!-- /Header -->
+			
+			<!-- Content -->
+			<div class="page-wrapper">
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
+							<aside class="sidebar sidebar-user">
+								<div class="card ctm-border-radius shadow-sm">
+									<div class="card-body py-4">
+										<div class="row">
+											<div class="col-md-12 mr-auto text-left">
+												<div class="custom-search input-group">
+													<div class="custom-breadcrumb">
+														<ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
+															<li class="breadcrumb-item d-inline-block"><a href="index.html" class="text-dark">Home</a></li>
+															<li class="breadcrumb-item d-inline-block active">Profile</li>
+														</ol>
+														<h4 class="text-dark">Profile</h4>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="user-card shadow-sm bg-white p-4 text-center ctm-border-radius card">
+									<div class="user-info">
+										<div class="user-avatar mb-4">
+											<img src="assets/img/profiles/img-6.jpg" alt="User Avatar" class="img-fluid rounded-circle" width="100">
+										</div>
+										<div class="user-details">
+											<h4><b>Welcome Maria</b></h4>
+											<span class="ctm-text-sm">mariacotton@example.com</span>
+										</div>
+									</div>
+								</div>
+								<div class="quicklink-sidebar-menu ctm-border-radius shadow-sm bg-white p-4 mb-4 card">
+									<ul class="list-group">
+										<li class="list-group-item text-center button-6"><a href="employment.html" class="text-dark">Employement</a></li>
+										<li class="list-group-item text-center button-6"><a href="details.html" class="text-dark">Detail</a></li>
+										<li class="list-group-item text-center button-6"><a href="documents.html" class="text-dark">Document</a></li>
+										<li class="list-group-item text-center button-6"><a href="payroll.html" class="text-dark">Payroll</a></li>
+										<li class="list-group-item text-center button-5 active"><a href="time-off.html" class="text-white">Timeoff</a></li>
+										<li class="list-group-item text-center button-6"><a href="profile-reviews.html" class="text-dark">Reviews</a></li>
+										<li class="list-group-item text-center button-6"><a class="text-dark" href="profile-settings.html">Settings</a></li>
+									</ul>
+								</div>
+							</aside>
+						</div>
+						
+						<div class="col-xl-9 col-lg-8  col-md-12">
+							<div class="row">
+								<div class="col-xl-6 col-lg-12 col-md-7 col-12 d-flex">
+									<div class="card ctm-border-radius shadow-sm flex-fill">
+										<div class="card-header">
+											<h4 class="card-title mb-0">Holidays List </h4>
+										</div>
+										<div class="card-body">
+											<div class="row">
+												<div class="col-md-7 col-sm-6">
+													<ul class="nav nav-pills" id="pills-tab" role="tablist">
+														<li class="nav-item">
+															<a class="nav-link active history-btn" data-toggle="tab" href="#tabs-1" role="tab">Upcoming</a>
+														</li>
+														<li class="nav-item">
+															<a class="nav-link history-btn" data-toggle="tab" href="#tabs-2" role="tab">History</a>
+														</li>
+													</ul>
+												</div>
+												<div class="col-md-5 col-sm-6">
+													<div class="form-row form-group mt-3 mt-lg-0 mt-sm-0">
+														<div class="col-sm-12">
+															<select class="form-control select">
+																<option selected>Apply Leave</option>
+																<option>Working From Home</option>
+																<option>Sick Leave</option>
+																<option>Parental Leave</option>
+																<option>Annual Leave</option>
+																<option>Normal Leave</option>
+															</select>
+														</div>
+													</div>
+												</div>
+												<div class="col-12">
+													<div class="tab-content py-0" id="pills-tabContent">
+														<div class="tab-pane py-0 active" id="tabs-1" role="tabpanel">
+															<div class="table-responsive table-hover">
+																<table class="table">
+																	<thead>
+																		<tr>
+																			<th>#</th>
+																			<th>Date</th>
+																			<th>Leave Reason</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>1</td>
+																			<td>Mon, 26 Aug 2019</td>
+																			<td>Bank Holiday</td>
+																		</tr>
+																		<tr>
+																			<td>2</td>
+																			<td>Wed, 25 Dec 2019</td>
+																			<td>Christmas Day</td>
+																		</tr>
+																		<tr>
+																			<td>3</td>
+																			<td>Thu, 26 Dec 2019</td>
+																			<td>Bank Holiday</td>
+																		</tr>
+																		<tr>
+																			<td>4</td>
+																			<td>Wed, 1 Jan 2020</td>
+																			<td>Bank Holiday</td>
+																		</tr>
+																		<tr>
+																			<td>5</td>
+																			<td>Mon, 6 Jan 2020</td>
+																			<td>Epiphany</td>
+																		</tr>
+																		<tr>
+																			<td>6</td>
+																			<td>Fri, 17 Jan 2020</td>
+																			<td>Lee-Jackson Day</td>
+																		</tr>
+																		<tr>
+																			<td>7</td>
+																			<td>Mon, 9 Mar 2020</td>
+																			<td>Presidents' Day</td>
+																		</tr>
+																		<tr>
+																			<td>8</td>
+																			<td>Wed, 1 Mar 2020</td>
+																			<td>Holi</td>
+																		</tr>
+																		<tr>
+																			<td>9</td>
+																			<td>Sat, 4 Jul 2020</td>
+																			<td>Independence Day</td>
+																		</tr>
+																		<tr>
+																			<td>10</td>
+																			<td>Mon, 7 Sep 2020</td>
+																			<td>Labor Day</td>
+																		</tr>
+																		<tr>
+																			<td>11</td>
+																			<td>Mon, 11 Nov 2020</td>
+																			<td>Veterans Day</td>
+																		</tr>
+																		<tr>
+																			<td>12</td>
+																			<td>Fri, 25 Dec 2020</td>
+																			<td>Christmas Day</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+														<div class="tab-pane py-0" id="tabs-2" role="tabpanel">
+															<div class="table-responsive table-hover">
+																<table class="table">
+																	<thead>
+																		<tr>
+																			<th>#</th>
+																			<th>Date</th>
+																			<th>Leave Reason</th>
+																		</tr>
+																	</thead>
+																	<tbody>
+																		<tr>
+																			<td>1</td>
+																			<td>Tue, 1 Jan 2019</td>
+																			<td>New Year's Day</td>
+																		</tr>
+																		<tr>
+																			<td>2</td>
+																			<td>Mon, 21 Jan 2019</td>
+																			<td>Martin Luther King Jr. Day</td>
+																		</tr>
+																		<tr>
+																			<td>3</td>
+																			<td>Mon, 18 Feb 2019</td>
+																			<td>Presidents' Day</td>
+																		</tr>
+																		<tr>
+																			<td>4</td>
+																			<td>Mon, 14 Oct 2019</td>
+																			<td>Columbus Day</td>
+																		</tr>
+																		<tr>
+																			<td>5</td>
+																			<td>Mon, 11 Nov 2019</td>
+																			<td>Veterans Day</td>
+																		</tr>
+																		<tr>
+																			<td>6</td>
+																			<td>Fri, 17 Jan 2019</td>
+																			<td>Lee-Jackson Day</td>
+																		</tr>
+																		<tr>
+																			<td>7</td>
+																			<td>Mon, 18 Feb 2019</td>
+																			<td>Presidents' Day</td>
+																		</tr>
+																		<tr>
+																			<td>8</td>
+																			<td>Thu, 21 Mar 2019</td>
+																			<td>Holi</td>
+																		</tr>
+																		<tr>
+																			<td>9</td>
+																			<td>Thu, 4 Jul 2019</td>
+																			<td>Independence Day</td>
+																		</tr>
+																		<tr>
+																			<td>11</td>
+																			<td>Mon, 11 Nov 2019</td>
+																			<td>Veterans Day</td>
+																		</tr>
+																		<tr>
+																			<td>10</td>
+																			<td>Thu, 28 Nov 2019</td>
+																			<td>Thanksgiving Day</td>
+																		</tr>
+																		<tr>
+																			<td>12</td>
+																			<td>Wed, 25 Dec 2019</td>
+																			<td>Christmas Day</td>
+																		</tr>
+																	</tbody>
+																</table>
+															</div>
+														</div>
+													</div>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+								<div class="col-xl-6 col-lg-12 col-md-5 col-12 d-flex">
+									<div class="card flex-fill ctm-border-radius shadow-sm">
+										<div class="card-header">
+											<h4 class="card-title mb-0">Leave Off Details</h4>
+										</div>
+										<div class="card-body">
+											<h5 class="card-title">Year</h5>
+											<p class="mb-0">01 January – 31 December</p>
+											<hr>
+											<h5 class="card-title">Days Used</h5>
+											<div class="progress">
+												<div class="progress-bar bg-primary w-25"> 5 days</div>
+											</div>
+											<hr>
+											<h5 class="card-title">Days</h5>
+											<p>5 Used</p>
+											<hr>
+											<h5 class="card-title">Non Deductible Days</h5>
+											<p class="text-theme btn btn-theme ctm-border-radius btn-sm text-white d-inline-block">5 Approved</p>
+											<p class="text-theme btn btn-theme ctm-border-radius btn-sm text-white d-inline-block">7 Pending</p>
+											<hr>
+											<h5 class="card-title">Attendance</h5>
+											<p class="mb-3"><img class="mr-2 leave-img img-fluid" src="assets/img/plaster.svg" alt="Sick Leave">3 Sick Days</p>
+											<p class="mb-0"><img class="mr-2 leave-img img-fluid" src="assets/img/desk-lamp.svg" alt="Working from Home">2 Working from Home</p>
+											<hr>
+											<h4 class="card-title d-inline-block">Time Off Approvers</h4>
+											<div class="form-row form-group">
+												<div class="col-sm-12">
+													<select class="form-control select">
+														<option selected>Choose Approver</option>
+														<option>Admin</option>
+														<option>Richard Wilson</option>
+													</select>
+												</div>
+											</div>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>							
+			</div>
+			<!-- /Content -->
+		
+		</div>
+		<!-- Inner Wrapper -->
+			
+		<div class="sidebar-overlay" id="sidebar_overlay"></div>
+			
+		<!-- jQuery -->
+		<script src="assets/js/jquery-3.2.1.min.js"></script>
+		
+		<!-- Bootstrap Core JS -->
+		<script src="assets/js/popper.min.js"></script>
+		<script src="assets/js/bootstrap.min.js"></script>
+		
+		<!-- Sticky sidebar JS -->
+		<script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>		
+		<script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>		
+		
+		<!-- Select2 JS -->
+		<script src="assets/plugins/select2/select2.min.js"></script>
+				
+		<!-- Custom Js -->
+		<script src="assets/js/script.js"></script>
+		
+	</body>
+
+<!-- Mirrored from dreamguys.co.in/demo/dleohr/dleohr/time-off.html by HTTrack Website Copier/3.x [XR&CO'2014], Tue, 14 Jan 2020 02:17:41 GMT -->
+</html>
