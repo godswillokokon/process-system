@@ -13,7 +13,11 @@ loginForm.addEventListener("submit", e => {
   const email = loginForm["email"].value;
   const password = loginForm["password"].value;
   const displayName = loginForm["name"].value;
-  let namm = sessionStorage.setItem(
+  sessionStorage.setItem(
+    "email",
+    email
+  );
+  sessionStorage.setItem(
     "username",
     displayName
   );

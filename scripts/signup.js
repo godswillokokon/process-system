@@ -20,7 +20,10 @@ signupForm.addEventListener("submit", e => {
   const email = signupForm["email"].value;
   const password = signupForm["password"].value;
   const Uname = signupForm["Username"].value;
-
+  sessionStorage.setItem(
+    "email",
+    email
+  );
   //signup user
   auth
     .createUserWithEmailAndPassword(email, password)

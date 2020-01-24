@@ -14,8 +14,14 @@ apply.addEventListener("submit", e => {
   const lga = document.getElementById("lga").value;
   const companyName = document.getElementById("companyName").value;
   const companyAddress = document.getElementById("companyAddress").value;
+  const NIMCnum = document.getElementById("nimc").value;
+  const CACnum = document.getElementById("cac").value;
+  const TINnum = document.getElementById("tin").value;
   const status = "In progress";
-
+  sessionStorage.setItem(
+    "email",
+    email
+  );
 
   return db
     .collection("applications")
@@ -33,8 +39,11 @@ apply.addEventListener("submit", e => {
       lga,
       companyName,
       companyAddress,
+      NIMCnum,
+      CACnum,
+      TINnum,
       status
-    })
+    }, alert(`Hello ${name}, You are almost there!!!`))
     .catch(err => {
       console.error(err);
       alert("err : ", err)

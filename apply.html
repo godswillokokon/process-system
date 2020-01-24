@@ -35,7 +35,7 @@
 
 	<!-- cloudinary -->
 
-	<link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.css" rel="stylesheet">>
+	<link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.css" rel="stylesheet">
 
 </head>
 
@@ -237,7 +237,7 @@
 										data-parent="#accordion-details">
 										<form id="apply">
 											<div class="row">
-												<div class="col-6 form-group">
+												<div class="col-12 form-group">
 													<input type="text" class="form-control" id="name" placeholder="Full name">
 												</div>
 												<div class="col-6 form-group">
@@ -285,6 +285,15 @@
 												<div class="col-6 form-group">
 													<input type="text" class="form-control" id="companyAddress" placeholder="Company's Address">
 												</div>
+												<div class="col-6 form-group">
+													<input type="text" class="form-control" id="nimc" placeholder="Nimc Number">
+												</div>
+												<div class="col-6 form-group">
+													<input type="text" class="form-control" id="cac" placeholder="CAC Number">
+												</div>
+												<div class="col-6 form-group">
+													<input type="text" class="form-control" id="tin" placeholder="TIN Number">
+												</div>
 												<div class="col-md-12">
 													<button type="submit"
 														class="btn btn-theme text-white ctm-border-radius button-1">Progress</button>
@@ -309,11 +318,11 @@
 										data-parent="#accordion-details">
 										<form>
 											<div class="row">
-												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="TIN Number">
-												</div>
-												<div class="col-6 form-group">
-													<input type="file" class="form-control" placeholder="Tax Document">
+
+												<div class="col-12 form-group">
+
+													<input id="tax-upload" action="submit" class="form-control" type="file">
+
 												</div>
 
 											</div>
@@ -337,11 +346,9 @@
 										data-parent="#accordion-details">
 										<form>
 											<div class="row">
-												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="CAC Number">
-												</div>
-												<div class="col-6 form-group">
-													<input type="file" class="form-control" placeholder="CAC Document">
+
+												<div class="col-12 form-group">
+													<input id="cac-upload" action="submit" class="form-control" type="file">
 												</div>
 
 											</div>
@@ -365,11 +372,9 @@
 										data-parent="#accordion-details">
 										<form>
 											<div class="row">
-												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="NIMC Number">
-												</div>
-												<div class="col-6 form-group">
-													<input type="file" class="form-control" placeholder="NIMC Document">
+
+												<div class="col-12 form-group">
+													<input id="nimc-upload" action="submit" class="form-control" type="file">
 												</div>
 
 											</div>
@@ -435,7 +440,11 @@
 
 	<script src="./config/index.js"></script>
 	<script src="./scripts/auth.js"></script>
+	<script src="./scripts/id.js"></script>
 	<script src="./scripts/apply.js"></script>
+	<script src="./scripts/tax.js"></script>
+	<script src="./scripts/cac.js"></script>
+	<script src="./scripts/nimc.js"></script>
 
 	<script type="text/javascript"
 		src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.js"></script>
