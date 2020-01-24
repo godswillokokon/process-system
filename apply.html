@@ -33,11 +33,9 @@
 	<!-- Custom CSS -->
 	<link rel="stylesheet" href="assets/css/style.css">
 
-	<!-- HTML5 shim and Respond.js IE8 support of HTML5 elements and media queries -->
-	<!--[if lt IE 9]>
-		<script src="assets/js/html5shiv.min.js"></script>
-		<script src="assets/js/respond.min.js"></script>
-		<![endif]-->
+	<!-- cloudinary -->
+
+	<link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.css" rel="stylesheet">>
 
 </head>
 
@@ -237,20 +235,21 @@
 								<div class="card-body p-0">
 									<div id="basic-one" class="collapse show ctm-padding" aria-labelledby="basic1"
 										data-parent="#accordion-details">
-										<form>
+										<form id="apply">
 											<div class="row">
 												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="Full name">
+													<input type="text" class="form-control" id="name" placeholder="Full name">
 												</div>
 												<div class="col-6 form-group">
-													<input type="email" class="form-control" placeholder="Email">
+													<input type="email" class="form-control" id="email" placeholder="Email">
 												</div>
 												<div class="col-6 form-group">
-													<input class="form-control datetimepicker cal-icon-input" type="text" placeholder="Birthday">
+													<input class="form-control datetimepicker cal-icon-input" id="date" type="text"
+														placeholder="Birthday">
 												</div>
 												<div class="col-6 form-group">
 
-													<select id="" class="form-control">
+													<select id="gender" class="form-control">
 														<option>Select Gender</option>
 														<option value="male">Male</option>
 														<option value="female">Female</option>
@@ -258,7 +257,7 @@
 												</div>
 												<div class="col-6 form-group">
 
-													<select id="" class="form-control">
+													<select id="marital" class="form-control">
 														<option>Select Marital Status</option>
 														<option value="single">Single</option>
 														<option value="married">Married</option>
@@ -266,25 +265,25 @@
 													</select>
 												</div>
 												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="Home Address">
+													<input type="text" class="form-control" id="address" placeholder="Home Address">
 												</div>
 												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="Phone Number">
+													<input type="text" class="form-control" id="mobile" placeholder="Phone Number">
 												</div>
 												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="Nationality">
+													<input type="text" class="form-control" id="nation" placeholder="Nationality">
 												</div>
 												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="State of Origin">
+													<input type="text" class="form-control" id="state" placeholder="State of Origin">
 												</div>
 												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="LGA">
+													<input type="text" class="form-control" id="lga" placeholder="LGA">
 												</div>
 												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="Company's Name">
+													<input type="text" class="form-control" id="companyName" placeholder="Company's Name">
 												</div>
 												<div class="col-6 form-group">
-													<input type="text" class="form-control" placeholder="Company's Address">
+													<input type="text" class="form-control" id="companyAddress" placeholder="Company's Address">
 												</div>
 												<div class="col-md-12">
 													<button type="submit"
@@ -436,6 +435,12 @@
 
 	<script src="./config/index.js"></script>
 	<script src="./scripts/auth.js"></script>
+	<script src="./scripts/apply.js"></script>
+
+	<script type="text/javascript"
+		src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
 
 </body>
 
