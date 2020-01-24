@@ -4,14 +4,14 @@ const CLOUD_NAMEEE = "ogcodes";
 
 
 
-let CacUpload = document.getElementById("cac-upload");
+let NimcUpload = document.getElementById("nimc-upload");
 
 
 
 
 
 
-CacUpload.addEventListener("change", event => {
+NimcUpload.addEventListener("change", event => {
 
   let file = event.target.files[0];
   let formData = new FormData();
