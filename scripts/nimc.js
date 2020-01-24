@@ -36,7 +36,7 @@ NimcUpload.addEventListener("change", event => {
 
       db.collection("applications").doc(hold).update({
 
-        cacDoc: res.data.secure_url
+        nimcDoc: res.data.secure_url
       });
 
 
