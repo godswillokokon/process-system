@@ -4,6 +4,7 @@ let emailID = sessionStorage.getItem("email");
 const setupContent = data => {
   let html = '';
   data.forEach(data => {
+    let id = data.id;
     let CACnum = data.data().CACnum;
     let NIMCnum = data.data().NIMCnum;
     let TINnum = data.data().TINnum;
@@ -26,6 +27,7 @@ const setupContent = data => {
 
 
 
+
     const div = `
     <tr>
     	<tr>
@@ -33,9 +35,20 @@ const setupContent = data => {
 																		 ${companyName}
 																		</td>
 																		<td> ${companyAddress}</td>
-																		<td> ${TINnum}</td>
-																		<td> ${CACnum}</td>
-																		<td> ${NIMCnum}</td>
+																		<td> ${name}</td>
+																		<td> ${email}</td>
+                                    <td> ${lga}</td>
+                                    <td> ${TINnum}    <button  class="btn btn-sm btn-outline-success" onclick="rel()" value="${id}"  id="bttn">	<span class="lnr lnr-pencil"></span></button></td>
+                                    <td> ${CACnum}    <button  class="btn btn-sm btn-outline-success" onclick="rel()" value="${id}"  id="bttn">	<span class="lnr lnr-pencil"></span></button></td>
+                                    <td> ${NIMCnum}    <button  class="btn btn-sm btn-outline-success" onclick="rel()" value="${id}"  id="bttn">	<span class="lnr lnr-pencil"></span></button></td>
+                                    	<td>
+                                  <div class="table-action">
+                                     <button  class="btn btn-sm btn-outline-success" onclick="rel()" value="${id}"  id="bttn"></span>ertify</button>
+                                      <button  class="btn btn-sm btn-outline-danger" onclick="pro()" value="${id}"  id="bttn">		 In Progress</button>
+																	
+																
+																	</div>
+																</td>
 																		
 																	</tr>			
     `;
@@ -51,7 +64,7 @@ const setupContent = data => {
 
 db
   .collection('applications')
-  .where("email", "==", emailID).where("status", "==", "In progress")
+
   .onSnapshot(
     doc => {
       let data = doc.docs;
