@@ -1,10 +1,10 @@
-const content = document.querySelector('#dash');
-let emailID = sessionStorage.getItem("email");
+const contentCA = document.querySelector('#certify');
+let emailIDD = sessionStorage.getItem("email");
 
-const setupContent = data => {
+const setupContentca = data => {
   let html = '';
   data.forEach(data => {
-    let id = data.id;
+    let Pid = data.id;
     let CACnum = data.data().CACnum;
     let NIMCnum = data.data().NIMCnum;
     let TINnum = data.data().TINnum;
@@ -27,34 +27,30 @@ const setupContent = data => {
 
 
 
-
     const div = `
-    <tr>
+    
     	<tr>
 																		<td>
 																		 ${companyName}
 																		</td>
 																		<td> ${companyAddress}</td>
-																		<td> ${name}</td>
-																		<td> ${email}</td>
-                                    <td> ${lga}</td>
-                                    <td> ${TINnum}   	<a target="_blank" href=" ${taxDoc}"><button  class="btn btn-sm btn-outline-success" >	<span class="lnr lnr-pencil"></span></button></a> </td>
-                                    <td> ${CACnum}   	<a target="_blank" href=" ${cacDoc}"><button  class="btn btn-sm btn-outline-success" >	<span class="lnr lnr-pencil"></span></button></a> </td>
-                                    <td> ${NIMCnum}   	<a target="_blank" href=" ${nimcDoc}"><button  class="btn btn-sm btn-outline-success" >	<span class="lnr lnr-pencil"></span></button></a> </td>
-                                    	<td>
+																		<td> ${TINnum}</td>
+																		<td> ${CACnum}</td>
+                                    <td> ${NIMCnum}</td>
+                                      <td><a href="./admin.html?${Pid}" ><button type="button" class="btn btn-danger"><i class="fa fa-external-link-square" aria-hidden="true"></i></button> </a></td>
+																		  	<td>
                                   <div class="table-action">
-                                     	<button  class="btn btn-sm btn-outline-success" onclick="rel()" value="${id}"  id="bttn"></span>Certify</button>
-                                    
+                                  
+                                      <button  class="btn btn-sm btn-outline-danger" onclick="pro()" value="${Pid}"  id="bttn">In Progress</button>
 																	
 																
 																	</div>
 																</td>
-																		
 																	</tr>			
     `;
     html += div;
   });
-  content.innerHTML = html;
+  contentCA.innerHTML = html;
 
 
 
@@ -64,11 +60,11 @@ const setupContent = data => {
 
 db
   .collection('applications')
-  .where("status", "==", "In Progress")
+  .where("status", "==", "Certified")
   .onSnapshot(
     doc => {
       let data = doc.docs;
-      setupContent(data);
+      setupContentca(data);
     },
     err => {
       console.log(err);

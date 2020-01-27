@@ -4,6 +4,7 @@ let emailIDD = sessionStorage.getItem("email");
 const setupContentc = data => {
   let html = '';
   data.forEach(data => {
+    let Pid = data.id;
     let CACnum = data.data().CACnum;
     let NIMCnum = data.data().NIMCnum;
     let TINnum = data.data().TINnum;
@@ -35,7 +36,8 @@ const setupContentc = data => {
 																		<td> ${companyAddress}</td>
 																		<td> ${TINnum}</td>
 																		<td> ${CACnum}</td>
-																		<td> ${NIMCnum}</td>
+                                    <td> ${NIMCnum}</td>
+                                      <td><a href="./admin.html?${Pid}" ><button type="button" class="btn btn-danger"><i class="fa fa-paper-plane" aria-hidden="true"></i> </button> </a></td>
 																		
 																	</tr>			
     `;

@@ -51,7 +51,7 @@ const setupContent = data => {
 
 db
   .collection('applications')
-  .where("email", "==", emailID).where("status", "==", "In progress")
+  .where("email", "==", emailID).where("status", "==", "In Progress")
   .onSnapshot(
     doc => {
       let data = doc.docs;
