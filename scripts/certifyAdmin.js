@@ -53,9 +53,6 @@ const setupContentca = data => {
   contentCA.innerHTML = html;
 
 
-
-
-
 };
 
 db

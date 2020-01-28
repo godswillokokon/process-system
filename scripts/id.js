@@ -1,16 +1,13 @@
 let emaill = sessionStorage.getItem("email");
 
 const setupContent = data => {
+  let arr = data.slice(-1)[0].id;
+  sessionStorage.setItem(
+    "idd",
+    arr
+  );
+  console.log(arr);
 
-  data.forEach(data => {
-    let id = data.id;
-    console.log(id);
-
-    sessionStorage.setItem(
-      "idd",
-      id
-    );
-  });
 
 };
 

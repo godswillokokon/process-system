@@ -1,12 +1,12 @@
 
 function rel() {
 
-  let hold = document.getElementById("bttn").value;
+  let rel = document.getElementById("bttn").value;
+  console.log(rel);
 
 
-  db.collection("applications").doc(hold).update({
+  db.collection("applications").doc(rel).update({
     status: "Certified",
-
   });
 
 
@@ -29,7 +29,6 @@ function pro() {
   let hold = document.getElementById("bttn").value;
   db.collection("applications").doc(hold).update({
     status: "In Progress",
-    closed: "In Progress",
   });
 
 

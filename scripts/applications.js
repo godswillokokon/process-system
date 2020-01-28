@@ -1,5 +1,6 @@
 const content = document.querySelector('#dash');
 let emailID = sessionStorage.getItem("email");
+console.log(emailID);
 
 const setupContent = data => {
   let html = '';
