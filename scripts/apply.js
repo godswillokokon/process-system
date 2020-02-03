@@ -17,7 +17,7 @@ apply.addEventListener("submit", e => {
   const NIMCnum = document.getElementById("nimc").value;
   const CACnum = document.getElementById("cac").value;
   const TINnum = document.getElementById("tin").value;
-  const status = "In progress";
+  const status = "In Progress";
   sessionStorage.setItem(
     "email",
     email
