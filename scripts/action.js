@@ -3,9 +3,9 @@ function rel() {
 
   let rel = document.getElementById("bttn").value;
   console.log(rel);
-
-
-  db.collection("applications").doc(rel).update({
+  let IDhold = sessionStorage.getItem("idd")
+  console.log(IDhold);
+  db.collection("applications").doc(IDhold).update({
     status: "Certified",
   });
 

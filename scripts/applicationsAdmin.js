@@ -4,7 +4,7 @@ let emailID = sessionStorage.getItem("email");
 const setupContent = data => {
   let html = '';
   data.forEach(data => {
-    let Tid = data.id;
+    let Tidd = data.id;
     let CACnum = data.data().CACnum;
     let NIMCnum = data.data().NIMCnum;
     let TINnum = data.data().TINnum;
@@ -24,7 +24,7 @@ const setupContent = data => {
     let cacDoc = data.data().cacDoc;
     let nimcDoc = data.data().nimcDoc;
     let taxDoc = data.data().taxDoc;
-    console.log(data.data());
+    let IDhold = sessionStorage.getItem("idd");
 
 
     const div = `
@@ -42,7 +42,7 @@ const setupContent = data => {
                                     <td> ${NIMCnum}   	<a target="_blank" href=" ${nimcDoc}"><button  class="btn btn-sm btn-outline-success" >	<span class="lnr lnr-pencil"></span></button></a> </td>
                                     	<td>
                                   <div class="table-action">
-                                     	<button  class="btn btn-sm btn-outline-success" onclick="rel()" value="${Tid}"  id="bttn"></span>Certify</button>
+                                     	<button  class="btn btn-sm btn-outline-success" onclick="rel()" value="${IDhold}"  id="bttn"></span>Certify</button>
                                     
 																	
 																
