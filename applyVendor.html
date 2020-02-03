@@ -1,0 +1,454 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>Apply</title>
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/x-icon" href="assets/img/favicon.png">
+
+  <!-- Bootstrap CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+
+  <!-- Linearicon Font -->
+  <link rel="stylesheet" href="assets/css/lnr-icon.css">
+
+  <!-- Fontawesome CSS -->
+  <link rel="stylesheet" href="assets/css/font-awesome.min.css">
+
+  <!-- Select2 CSS -->
+  <link rel="stylesheet" href="assets/plugins/select2/select2.min.css">
+
+  <!-- Datetimepicker CSS -->
+  <link rel="stylesheet" href="assets/css/bootstrap-datetimepicker.min.css">
+
+  <!-- Tagsinput CSS -->
+  <link rel="stylesheet" href="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.css">
+
+  <!-- Custom CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <!-- cloudinary -->
+
+  <link href="https://unpkg.com/cloudinary-video-player/dist/cld-video-player.css" rel="stylesheet">
+
+</head>
+
+<body>
+
+  <!-- Inner wrapper -->
+  <div class="inner-wrapper">
+
+    <!-- Loader -->
+    <div id="loader-wrapper">
+
+      <div class="loader">
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+        <div class="dot"></div>
+      </div>
+    </div>
+
+    <!-- Header -->
+    <header class="header">
+
+      <!-- Top Header Section -->
+      <div class="top-header-section">
+        <div class="container-fluid">
+          <div class="row align-items-center">
+            <div class="col-lg-3 col-md-3 col-sm-3 col-6">
+              <div class="logo my-3 my-sm-0">
+                <a href="">
+                  <img src="assets/img/horse.jpg" alt="logo image" class="img-fluid" width="100">
+                </a>
+              </div>
+            </div>
+            <div class="col-lg-9 col-md-9 col-sm-9 col-6 text-right">
+              <div class="user-block d-none d-lg-block">
+                <div class="row align-items-center">
+                  <div class="col-lg-12 col-md-12 col-sm-12">
+
+                    < <!-- user info-->
+                      <div class="user-info align-right dropdown d-inline-block header-dropdown">
+                        <a href="javascript:void(0)" data-toggle="dropdown" class=" menu-style dropdown-toggle">
+                          <div class="user-avatar d-inline-block">
+                            <img src="assets/img/profiles/user.png" alt=" user avatar" class="rounded-circle img-fluid"
+                              width="55">
+                          </div>
+                        </a>
+
+                        <!-- Notifications -->
+                        <div
+                          class="dropdown-menu notification-dropdown-menu shadow-lg border-0 p-3 m-0 dropdown-menu-right">
+
+                          </a>
+                          <a class="dropdown-item p-2" href="loginVendor.html">
+                            <span class="media align-items-center">
+                              <span class="lnr lnr-power-switch mr-3"></span>
+                              <span class="media-body text-truncate">
+                                <span class="text-truncate">Logout</span>
+                              </span>
+                            </span>
+                          </a>
+                        </div>
+                        <!-- Notifications -->
+
+                      </div>
+                      <!-- /User info-->
+
+                  </div>
+                </div>
+              </div>
+              <div class="d-block d-lg-none">
+                <a href="javascript:void(0)">
+                  <span class="lnr lnr-user d-block display-5 text-white" id="open_navSidebar"></span>
+                </a>
+
+                <!-- Offcanvas menu -->
+                <div class="offcanvas-menu" id="offcanvas_menu">
+                  <span class="lnr lnr-cross float-left display-6 position-absolute t-1 l-1 text-white"
+                    id="close_navSidebar"></span>
+                  <div class="user-info align-center bg-theme text-center">
+                    <a href="javascript:void(0)" class="d-block menu-style text-white">
+                      <div class="user-avatar d-inline-block mr-3">
+                        <img src="assets/img/profiles/img-6.jpg" alt="user avatar" class="rounded-circle" width="50">
+                      </div>
+                    </a>
+                  </div>
+
+                  <hr>
+                  <div class="user-menu-items px-3 m-0">
+                    <a class="px-0 pb-2 pt-0" href="">
+                      <span class="media align-items-center">
+                        <span class="lnr lnr-home mr-3"></span>
+                        <span class="media-body text-truncate text-left">
+                          <span class="text-truncate text-left">Dashboard</span>
+                        </span>
+                      </span>
+                    </a>
+
+                    <a class="p-2" href="loginVendor.html">
+                      <span class="media align-items-center">
+                        <span class="lnr lnr-power-switch mr-3"></span>
+                        <span class="media-body text-truncate text-left">
+                          <span class="text-truncate text-left">Logout</span>
+                        </span>
+                      </span>
+                    </a>
+                  </div>
+                </div>
+                <!-- /Offcanvas menu -->
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Top Header Section -->
+
+      <!-- Slide Nav -->
+      <div class="header-wrapper d-none d-sm-none d-md-none d-lg-block">
+        <div class="container-fluid">
+          <div class="row">
+            <div class="col-12">
+              <div class="header-menu-list d-flex bg-white rt_nav_header horizontal-layout nav-bottom">
+                <div class="append mr-auto my-0 my-md-0 mr-auto">
+                  <ul class="list-group list-group-horizontal-md mr-auto">
+                    <li class="mr-1"><a href="dashboardVendor.html" class="text-dark btn-ctm-space"><span
+                          class="lnr lnr-home pr-0 pr-lg-2"></span><span class="d-none d-lg-inline">Dashboard</span></a>
+                    </li>
+                    <li class="active mr-1"><a class="text-white btn-ctm-space" href="applyVendor.html"><span
+                          class="lnr lnr-users pr-0 pr-lg-2"></span><span
+                          class="d-none d-lg-inline">Application</span></a></li>
+
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- /Slide Nav -->
+
+    </header>
+    <!-- /Header -->
+
+    <!-- Content -->
+    <div class="page-wrapper">
+      <div class="container-fluid">
+        <div class="row">
+          <div class="col-xl-3 col-lg-4 col-md-12 theiaStickySidebar">
+            <aside class="sidebar sidebar-user">
+              <div class="card ctm-border-radius shadow-sm">
+                <div class="card-body py-4">
+                  <div class="row">
+                    <div class="col-md-12 mr-auto text-left">
+                      <div class="custom-search input-group">
+                        <div class="custom-breadcrumb">
+                          <ol class="breadcrumb no-bg-color d-inline-block p-0 m-0 mb-2">
+                            <li class="breadcrumb-item d-inline-block"><a href="" class="text-dark">Home</a>
+                            </li>
+                            <li class="breadcrumb-item d-inline-block active">Clients</li>
+                          </ol>
+                          <h4 class="text-dark">Apply for Certification</h4>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <div class="card ctm-border-radius shadow-sm">
+                <div class="card-header">
+                  <h4 class="card-title mb-0">Details Content</h4>
+                </div>
+                <div class="card-body">
+                  <div id="list-example" class="list-group border-none">
+                    <a class="list-group-item list-group-item-action border-none" href="javascript:void(0)">Basic</a>
+                    <a class="list-group-item list-group-item-action border-none" href="javascript:void(0)">Tax</a>
+                    <a class="list-group-item list-group-item-action border-none" href="javascript:void(0)">CAC</a>
+                    <a class="list-group-item list-group-item-action border-none" href="javascript:void(0)">NIMC</a>
+                  </div>
+                </div>
+              </div>
+            </aside>
+          </div>
+
+          <div class="col-xl-9 col-lg-8  col-md-12">
+            <div class="accordion add-employee" id="accordion-details">
+              <div class="card shadow-sm ctm-border-radius">
+                <div class="card-header" id="basic1">
+                  <h4 class="cursor-pointer mb-0">
+                    <a class=" coll-arrow d-block text-dark" href="javascript:void(0)" data-toggle="collapse"
+                      data-target="#basic-one" aria-expanded="true">
+                      Basic Details
+                      <br><span class="ctm-text-sm">Organized and secure.</span>
+                    </a>
+                  </h4>
+                </div>
+                <div class="card-body p-0">
+                  <div id="basic-one" class="collapse show ctm-padding" aria-labelledby="basic1"
+                    data-parent="#accordion-details">
+                    <form id="applyVendor.html">
+                      <div class="row">
+                        <div class="col-12 form-group">
+                          <input type="text" class="form-control" id="name" placeholder="Full name">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="email" class="form-control" id="email" placeholder="Email">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input class="form-control datetimepicker cal-icon-input" id="date" type="text"
+                            placeholder="Birthday">
+                        </div>
+                        <div class="col-6 form-group">
+
+                          <select id="gender" class="form-control">
+                            <option>Select Gender</option>
+                            <option value="male">Male</option>
+                            <option value="female">Female</option>
+                          </select>
+                        </div>
+                        <div class="col-6 form-group">
+
+                          <select id="marital" class="form-control">
+                            <option>Select Marital Status</option>
+                            <option value="single">Single</option>
+                            <option value="married">Married</option>
+                            <option value="divorced">Divorced</option>
+                          </select>
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="address" placeholder="Home Address">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="mobile" placeholder="Phone Number">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="nation" placeholder="Nationality">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="state" placeholder="State of Origin">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="lga" placeholder="LGA">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="companyName" placeholder="Company's Name">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="companyAddress" placeholder="Company's Address">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="nimc" placeholder="Nimc Number">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="cac" placeholder="CAC Number">
+                        </div>
+                        <div class="col-6 form-group">
+                          <input type="text" class="form-control" id="tin" placeholder="TIN Number">
+                        </div>
+                        <div class="col-md-12">
+                          <button type="submit"
+                            class="btn btn-theme text-white ctm-border-radius button-1">Progress</button>
+                        </div>
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+              <div class="card shadow-sm ctm-border-radius">
+                <div class="card-header" id="headingTwo">
+                  <h4 class="cursor-pointer mb-0">
+                    <a class="coll-arrow d-block text-dark" href="javascript:void(0)" data-toggle="collapse"
+                      data-target="#employee-det">
+                      Tax Credentials
+                      <br><span class="ctm-text-sm">Let everyone know the essentials so they're fully prepared.</span>
+                    </a>
+                  </h4>
+                </div>
+                <div class="card-body p-0">
+                  <div id="employee-det" class="collapse show ctm-padding" aria-labelledby="headingTwo"
+                    data-parent="#accordion-details">
+                    <form>
+                      <div class="row">
+
+                        <div class="col-12 form-group">
+
+                          <input id="tax-upload" action="submit" class="form-control" type="file">
+
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow-sm ctm-border-radius">
+                <div class="card-header" id="headingThree">
+                  <h4 class="cursor-pointer mb-0">
+                    <a class="coll-arrow d-block text-dark" href="javascript:void(0)" data-toggle="collapse"
+                      data-target="#salary_det">
+                      CAC Credentials
+                      <br><span class="ctm-text-sm">Let everyone know the essentials so they're fully prepared.</span>
+                    </a>
+                  </h4>
+                </div>
+                <div class="card-body p-0">
+                  <div id="salary_det" class="collapse show ctm-padding" aria-labelledby="headingTwo"
+                    data-parent="#accordion-details">
+                    <form>
+                      <div class="row">
+
+                        <div class="col-12 form-group">
+                          <input id="cac-upload" action="submit" class="form-control" type="file">
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+              <div class="card shadow-sm ctm-border-radius">
+                <div class="card-header" id="headingFour">
+                  <h4 class="cursor-pointer mb-0">
+                    <a class="coll-arrow d-block text-dark" href="javascript:void(0)" data-toggle="collapse"
+                      data-target="#term-office">
+                      NIMC Credentials
+                      <br><span class="ctm-text-sm">Let everyone know the essentials so they're fully prepared.</span>
+                    </a>
+                  </h4>
+                </div>
+                <div class="card-body p-0">
+                  <div id="term-office" class="collapse show ctm-padding" aria-labelledby="headingTwo"
+                    data-parent="#accordion-details">
+                    <form>
+                      <div class="row">
+
+                        <div class="col-12 form-group">
+                          <input id="nimc-upload" action="submit" class="form-control" type="file">
+                        </div>
+
+                      </div>
+                    </form>
+                  </div>
+                </div>
+              </div>
+
+            </div>
+            <div class="row">
+              <div class="col-12">
+                <div class="submit-section text-center btn-add">
+                  <a href="dashboardVendor.html"><button class="btn btn-theme text-white ctm-border-radius button-1"
+                      onclick="alert(`congratulations you have successfully reached the end`)">Done</button></a>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!--/Content-->
+
+  </div>
+  <!-- Inner Wrapper -->
+
+  <div class="sidebar-overlay" id="sidebar_overlay"></div>
+
+  <!-- jQuery -->
+  <script src="assets/js/jquery-3.2.1.min.js"></script>
+  <script src="assets/js/jquery-1.11.1.min.js"></script>
+
+  <!-- Bootstrap Core JS -->
+  <script src="assets/js/popper.min.js"></script>
+  <script src="assets/js/bootstrap.min.js"></script>
+
+  <!-- Sticky sidebar JS -->
+  <script src="assets/plugins/theia-sticky-sidebar/ResizeSensor.js"></script>
+  <script src="assets/plugins/theia-sticky-sidebar/theia-sticky-sidebar.js"></script>
+
+  <!-- Datetimepicker JS -->
+  <script src="assets/plugins/select2/moment.min.js"></script>
+  <script src="assets/js/bootstrap-datetimepicker.min.js"></script>
+
+  <!-- Select2 JS -->
+  <script src="assets/plugins/select2/select2.min.js"></script>
+
+  <!-- Tagsinput JS -->
+  <script src="assets/plugins/bootstrap-tagsinput/bootstrap-tagsinput.min.js"></script>
+
+  <!-- Custom Js -->
+  <script src="assets/js/script.js"></script>
+
+
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-auth.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-firestore.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-functions.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+  <!-- TODO: Add SDKs for Firebase products that you want to use
+				     https://firebase.google.com/docs/web/setup#available-libraries -->
+  <script src="https://www.gstatic.com/firebasejs/7.7.0/firebase-analytics.js"></script>
+
+  <script src="./config/index.js"></script>
+  <script src="./scripts/auth.js"></script>
+
+
+  <script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/cloudinary-core/2.3.0/cloudinary-core-shrinkwrap.js"></script>
+  <script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+
+
+</body>
+
+
+</html>
