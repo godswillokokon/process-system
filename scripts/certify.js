@@ -38,7 +38,7 @@ const setupContentc = data => {
 																		<td> ${CACnum}</td>
                                     <td> ${NIMCnum}</td>
                                       <td><a href="./admin.html?${Pid}" ><button type="button" class="btn btn-danger"><i class="fa fa-paper-plane" aria-hidden="true"></i> </button> </a></td>
-																		
+																	
 																	</tr>			
     `;
     html += div;

@@ -4,6 +4,7 @@ const namee = document.querySelector(".namee");
 const tin = document.querySelector("#tin");
 const nimc = document.querySelector("#nimc");
 const cac = document.querySelector("#cac");
+const year = document.querySelector("#year");
 
 
 
@@ -69,6 +70,10 @@ db.collection("applications")
       `;
     cac.innerHTML = htmlPsex;
 
+    const htmlYear = `
+    2020 - 2021
+      `;
+    year.innerHTML = htmlYear;
 
 
 
