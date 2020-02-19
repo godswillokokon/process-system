@@ -33,9 +33,9 @@ const setupContent = data => {
 																		<td>
 																		 ${companyName}
 																		</td>
-																		<td> ${companyAddress}</td>
+																		<td> ${companyAddress}</td> 
 																		<td> ${name}</td>
-																		<td> ${email}</td>
+																		<td><a href="mailto:${email}?Subject=Hello" target="_top  class="btn btn-default"> ${email}</a></td>
                                     <td> ${lga}</td>
                                     <td> ${TINnum}   	<a target="_blank" href=" ${taxDoc}"><button  class="btn btn-sm btn-outline-success" >	<span class="lnr lnr-pencil"></span></button></a> </td>
                                     <td> ${CACnum}   	<a target="_blank" href=" ${cacDoc}"><button  class="btn btn-sm btn-outline-success" >	<span class="lnr lnr-pencil"></span></button></a> </td>
