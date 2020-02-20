@@ -39,7 +39,7 @@ NimcUpload.addEventListener("change", event => {
         nimcDoc: res.data.secure_url
       });
 
-
+      alert("Proceed");
       console.log("donee");
 
     })

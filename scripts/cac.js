@@ -38,7 +38,7 @@ CacUpload.addEventListener("change", event => {
 
         cacDoc: res.data.secure_url
       });
-
+      alert("Proceed");
 
       console.log("donee");
 

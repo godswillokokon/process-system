@@ -39,7 +39,7 @@ TaxUpload.addEventListener("change", event => {
         taxDoc: res.data.secure_url
       });
 
-
+      alert("Proceed");
       console.log("donee");
 
     })
