@@ -3,6 +3,7 @@ let emaill = sessionStorage.getItem("email");
 const setupContentid = data => {
 
   let arr = data.slice(-1)[0].id;
+  console.log(arr)
   sessionStorage.setItem(
     "idd",
     arr
